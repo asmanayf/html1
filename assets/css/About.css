@@ -57,235 +57,26 @@ ul{
 a{
     color: #3A3845
 }
-.slidermd{
-    display: none;
-}
-.Slider{
-    width: 100%;
-    margin: 0 auto;
-}
-.Slider-1{
-    grid-template-columns: 35% 65%;
-    overflow: hidden;
-    width: 100%;
-    display: grid;
-}
-.Slider-1 img{
-    display: block;
-    object-fit:contain ;
-}
-.Slider-2{
-    background-color: #826F66;
-    position: absolute;
-    top: 110px ;
-    bottom: 0px;
-    left: 168px;
-    height: 675px;
-    width: 30%;
-    z-index: 9999;
-    color: #FFFDFB;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.About-Moon{
     align-items: center;
-    padding: 40px;
+    justify-content: center;
     text-align: center;
-    box-sizing: border-box;
+    padding: 64px 337px;
 }
-.Slider-2 img {
-    width: 50px;
-    height: auto;
-    margin-bottom: 20px;
+.About-Moon p{
+    margin-top: 24px ;
+    font-size:16px 
 }
-
-.Slider-2 p {
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    opacity: 0.9;
-}
-
-.Slider-2 h1 {
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    line-height: 1.3;
-    margin-bottom: 35px;
-    text-transform: uppercase;
-}
-
-.Slider-2 a {
-    display: inline-block;
-    background-color: #FFFDFB;
-    color: #826F66;
-    text-decoration: none;
-    padding: 12px 35px;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+.About-Moon h1{
+    font-size: 36px;
+    color: #3A3845;
 }
 @media screen and (min-width: 320px ) and (max-width:991px) {
-    .Slider-1 {
-        grid-template-columns: 100% ; 
-    }
-    .Slider-2 {
-        position: relative ;
-        top: 0 ;
-        left: 0 ;
-        width: 100% ;
-        height: auto ;
-        padding: 60px 20px ;
+    .About-Moon{
+        padding: 64px 40.5px;
     }
 }
-.collections{
-    display: flex;
-    flex-wrap: wrap; 
-    padding: 80px 0
-}
-.collections .row{
-    gap: 30px;
-}
-.collection{
-    text-align: center;
-    width: calc((100% -90px)/4);
-}
-.collection h2 {
-    margin-top: 23px;
-}
-.collection img{
-    width: 100%;
-}
-@media screen and (min-width: 320px ) and (max-width:600px) {
-    .collection{
-    width:100% ;
-    }
-}
-@media screen and (min-width: 600px ) and (max-width:991px) {
-    .collection{
-    width: calc((100% -30px)/2);
-    }
-}
-.cardsV2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.Grid{
-    background-color: #F7F6F5;
-    padding: 64px 78.5px ;
-    width: 555px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.Grid h1{
-    color: #3A3845;
-    font-style: 28px;
-    max-width: 300px;
-}
-.Grid p {
-    color: #595667;
-    font-size: 16px;
-    max-width: 340px;
-    margin-top: 24px;
-    margin-bottom: 32px;
-}
-.imgV2{
-    flex: 1;
-    display: flex;
-}
-.imgV2 img{
-    object-fit: cover;
-    display: block;
-}
-@media screen and (min-width: 320px ) and (max-width:660px) {
-    .imgV2{
-        grid-template-columns: 100% ; 
-    }
-    .Grid {
-        position: relative ;
-        top: 0 ;
-        left: 0 ;
-        width: 100% ;
-        height: auto ;
-        padding: 60px 20px ;
-    }
-}
-.Best{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 80px 0
-}
-.Best h1{
-    display: flex;
-    flex-direction: column;
-    gap: 30px ;
-    margin-bottom: 48px;
-    margin-left: 524.5px;
-}
-.Best1{
-    display:flex;
-    width: 23%;
-    gap:30px  
-    
-}
-.Best2{
-    display: flex;
-    width: 23%;
-    gap: 30px ;
-}
-.Best img{
-    width: 100%px;
-    margin-bottom: 24px ;
-    height: auto;
-}
-.Best h2{
-    color: #3A3845;
-    font-size: 14px;
-}
-.Best p{
-    color:#807F86 ;
-    margin-top: 24px;
-    font-size: 14px;
-}
-.Best button{
-    padding: 9px 92px;
-    background-color: transparent;
-    margin-bottom: 40px;
-    align-items: stretch;
-    margin-top: 58px;
-}
-.button1 button{
-    margin-top: 80px;
-}
-@media screen and (min-width: 320px ) and (max-width:660px){
-    .Best {
-        margin-top: 40px;
-        width: 100%;
-        display: flex ;
-        flex-direction: column ;
-        align-items: center ;
-    }
-    .Best h1 {
-        margin-left: 0 ; 
-        text-align: center;
-        margin-bottom: 30px ;
-    }
-    
-    .Best1, .Best2 {
-        width: 100% ;
-        display: grid ;
-        grid-template-columns: repeat(2, 1fr) ; 
-    }
-
-}
-.Lear1{
+.History1{
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -309,17 +100,15 @@ a{
 .Made h1{
     color: #3A3845;
     font-style: 28px;
-    max-width: 300px;
+    margin-top: 116px;
 }
 .Made p {
     color: #595667;
     font-size: 16px;
-    max-width: 340px;
     margin-top: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 116px;
 }
 .imgmade{
-    flex: 1;
     display: flex;
     width: 555px;
     height: 348px;
@@ -330,7 +119,7 @@ a{
     width: 555px;
     height: 348px;
 }
-.Lear2{
+.History2{
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -340,7 +129,6 @@ a{
 }
 .History{
     background-color: #F7F6F5;
-    padding: 64px 78.5px ;
     width: 555px;
     height: 348px;
     display: flex;
@@ -350,12 +138,14 @@ a{
     text-align: center;
     flex: 1;  
 }
+.History h1{
+    margin-top: 100px;
+}
 .History p{
     color: #595667;
     font-size: 16px;
-    max-width: 340px;
     margin-top: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 132px;
 }
 .imgHistory{
     flex: 1;
@@ -365,12 +155,12 @@ a{
 }
 @media screen and (min-width: 320px ) and (max-width:660px) {
 
-    .Lear1 {
+    .History1 {
         flex-direction: column;
         width: 100%;
         height: auto; 
     }
-    .Lear2 {
+    .History2 {
         flex-direction: column-reverse; 
         width: 100%;
         height: auto;
@@ -390,57 +180,116 @@ a{
         display: block; 
     }
 }
-
-.blog h1{
-    margin-left: 50%;
-    margin-bottom: 48px;
+.How-we-works{
+    width: 1,440px;
+    height: 523px;
 }
-.blog1{
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-}
-.TableWare{
-    background-color: #F7F6F5;
-    padding: 64px 78.5px ;
+.How-we-works-1{
+    margin-left: 60px;
+    margin-top: 80px;
     width: 555px;
-    height: 348px;
-    display: flex;
-    flex-direction: column;
+    height: 443px;
+}
+.How-we-works-1 p{
+    color: #595667;
+    font-size: 16px;
+    margin-top: 24px;
+    
+}
+.How-we-works-1 h2{
+    font-size: 18px;
+    margin-top: 32px;
+}
+.How-we-works-1 h1{
+    font-size: 28px;
+}
+.How-we-works-2{
+    margin-top: 80px;
+    width: 555px;
+    height: 443px;
+}
+@media screen and (min-width: 320px ) and (max-width:660px) {
+    .Lear2 {
+        flex-direction: column-reverse; 
+        width: 100%;
+        height: auto;
+    }
+    .How-we-works-1 {
+        width: 100%;
+        height: 100%; 
+    }
+    .How-we-works-2 {
+        width: 100%;
+        height: auto;
+    }
+    .How-we-works-2 img {
+        width: 100%;
+        height: 600px; 
+        object-fit: cover;
+        display: block; 
+    }   
+}
+.Meet-Our-Team{
+    padding: 80px 0
+}
+.Meet-Our-Team h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex: 1;
-    
+    margin-bottom: 48px;
 }
-.TableWare h2{
-    color: #3A3845;
-    font-style: 28px;
-    max-width: 300px;
+.Meet-Our-Team .row{
+    gap: 30px;
 }
-.TableWare h3{
+.Meet-Our-Team1{
+    text-align: center;
+    width: calc((100% -90px)/4);
+}
+.Meet-Our-Team1 h2 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+.Meet-Our-Team1 img{
+    width: 100%;
+}
+.Meet-Our-Team1 p{
     color: #807F86;
 }
-.TableWare p {
-    color: #595667;
-    font-size: 16px;
-    max-width: 340px;
-    margin-top: 24px;
-    margin-bottom: 32px;
-}
-.imgblog{
-    flex: 1;
-    display: flex;
-    width: 555px;
-    height: 348px;
-}
-.imgblog img{
-    object-fit: cover;
-    display: block;
-    width: 100%;
-    height: 100%;
+@media screen and (min-width: 320px ) and (max-width:660px) {
+    .Meet-Our-Team {
+        padding: 36px 0;
+    }
+    .Meet-Our-Team h1 {
+        margin-bottom: 48px;
+        font-size: 36px;
+    }
+
+    .Meet-Our-Team .row {
+        flex-wrap: nowrap ;   
+        overflow-x: auto ;   
+        padding: 0 20px 15px 20px;       
+        gap: 20px;                  
+        -webkit-overflow-scrolling: touch; 
+        scroll-snap-type: x mandatory;   
+    }
+    .Meet-Our-Team .row::-webkit-scrollbar {
+        display: none; 
+    }
+    .Meet-Our-Team1 {
+        scroll-snap-align: center;  
+    }
+    .Meet-Our-Team1 img{
+        width: 255px;
+        height: 321px;
+    }
+    .Meet-Our-Team1 h2 {
+        font-size: 14px;
+        margin-top: 24px;
+    }
+    .Meet-Our-Team1 p{
+        font-size: 16px;
+    }
+
 }
 .emails{
     display: flex;
@@ -461,46 +310,18 @@ a{
     color: #595667;
     margin-top: 80px;
 }
-.emails h2{
+.emails h1{
     margin-top: 24px;
     margin-bottom: 24px;
 }
 @media screen and (min-width: 320px ) and (max-width:660px) {
-    .blog h1{
-        margin-left: 0;
-        text-align: center;
-    }
-    .blog1 {
-        flex-direction: column-reverse;
-        width: 100%;
-        height: auto; 
-    }
-    .TableWare {
-        width: 100%;
-        height: 337px;
-    }
-    .TableWare h2{
-        font-size: 28px;
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-    .imgblog {
-        width: 100%;
-        height: auto;
-    }
-    .imgblog img {
-        width: 100%;
-        height: 297px; 
-        object-fit: cover;
-        display: block; 
-    }
     .emails {
         text-align: center;
     }
     .emails h3{
         margin-top: 40px;
     }
-    .emails h2 {
+    .emails h1 {
         font-size: 28px;
         margin-bottom: 24px;
         margin-top: 24px;
@@ -520,7 +341,6 @@ a{
         display: block; 
     }
 }
-
 .moon-footer {
   padding: 48px 245px 0px 245px; 
 }

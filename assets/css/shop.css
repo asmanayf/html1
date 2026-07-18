@@ -42,7 +42,7 @@
         display: none;
     }
     .container{
-        width:calc(100% - 40px );
+        width:calc(100% - 40px ) !important;
     }
     .meun-1{
         display: block;
@@ -71,7 +71,29 @@ a{
     flex-wrap: wrap; 
     align-items: flex-start;
 }
+.breadcrumbs  .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;  
+    gap: 8px; 
+    margin-top: 20px;  
+    margin-bottom: 50px;
+}
+.breadcrumb-link {
+    color: #807F86; 
+    text-decoration: none;
+    font-size: 14px;
 
+}
+.breadcrumb-separator {
+    color: #807F86;
+    font-size: 15px;
+}
+.breadcrumb-link1{
+    color: #3A3845; 
+    text-decoration: none;
+    font-size: 14px; 
+}
 .shop  h2 {
     font-size: 14px;
     margin-bottom: 50px;
@@ -178,10 +200,71 @@ a{
     margin-top: auto;
     transition: all 0.3s ease;
 }
-
 .shop2 button:hover {
     background-color: #3A3845;
     color: #FFFDFB;
+}
+.sort-by-wrapper {
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    margin-bottom: 30px ;
+}
+.mobile-filter-btn{
+    display: none !important;
+}
+.mobile-filter-btn {
+    flex-direction: row !important;
+    align-items: center ;
+    gap: 8px ;
+    cursor: pointer;
+}
+.filter-icon-bars {
+    display: flex ;
+    flex-direction: column ;
+    justify-content: space-between ;
+    align-items: flex-start ;
+    width: 16px ;
+    height: 10px ;
+}
+.filter-icon-bars span {
+    display: block ;
+    height: 1.5px ;
+    background-color: #3A3845 ;
+}
+.filter-icon-bars span:nth-child(1) {
+    width: 100% ; 
+    margin-left: 21px; 
+}
+.filter-icon-bars span:nth-child(2) {
+    width: 65% ; 
+    margin-left: 25px; 
+}
+.filter-icon-bars span:nth-child(3) { 
+    width: 35% ; 
+    margin-left: 27px;
+}
+.filter-text-btn {
+    font-size: 14px ;
+    font-weight: bold ;
+    margin-left: 46px;
+}
+.sort-text {
+    margin-left: 604px;
+    font-size: 14px ;
+    width: 200px;
+    gap: 10px;
+}
+.sort-icon-arrow {
+    display: inline-block ;
+    width: 6px ;
+    height: 6px ;
+    margin-left: 8px ;
+    border-right: 1.5px solid #3A3845 ;
+    border-bottom: 1.5px solid #3A3845 ;
+    transform: rotate(45deg) ;
+    vertical-align: middle ;
+    margin-top: -4px ;
 }
 .pagination {
     display: flex;
@@ -219,57 +302,53 @@ a{
     font-size: 20px;
 }
 @media screen and (min-width: 320px ) and (max-width:991px) {
-
-}
-@media screen and (max-width: 660px) {
-    
-    html, body {
-        overflow-x: hidden; 
+    .sidebar{
+        display: none;
     }
-    .sidebar .filter-group, 
-    .sidebar p {
-        display: none !important;
-    }
-    .shop  .container {
+    .mobile-filter-btn{
         display: flex !important;
-        flex-direction: column !important;
-        gap: 10 !important;
-        margin-left: 10px;
-        margin-right: 10px;
     }
-    .shop2 {
+    .sort-by-wrapper{
+        margin-top: 50px;
+    }
+   .shop2 {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important; 
-        gap: 10px !important; 
-        width: 50% !important;
+        gap: 31px 10px !important; 
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .sort-by-wrapper {
+        grid-column: span 2 !important;
+        width: 100% !important;
+        margin-bottom: 20px !important;
     }
     .shpo2-1, .shpo2-2, .shpo2-3 {
         display: contents !important; 
     }
-    .shop-3 .shop2  {
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: space-between !important;
-        background-color: #ffffff;
-        width: 100%!important;
-        height: 50% !important;
-        box-sizing: border-box !important;
+    .shop-3 img, .shop2-img3 img {
+        width: 100% !important;
+        height: 180px !important;    
+        object-fit: cover !important;
+        display: block !important;
+        margin-bottom: 10px !important;
     }
-    .shop2  img {
-        width: 50% !important;
-        object-fit: cover !important; 
-        margin-bottom: 24px !important;
+    .shop2 button {
+        width: 100% !important;
+        padding: 10px !important;
+        font-size: 12px !important;
+        margin-top: auto !important; 
     }
-    .shop2  button {
-        width: 50% !important;
-        padding: 10px 4px !important;
-        font-size: 11px !important;
-        background-color: transparent;
-        border: 1px solid #3A3845;
-        color: #3A3845;
-        cursor: pointer;
-        text-transform: uppercase;
-        margin-top: auto !important;
+    .shop2-img3 {
+        display: none !important; 
+    }
+    .pagination {
+        grid-column: span 2 !important;
+        margin-left: 0 !important;
+        justify-content: center !important;
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
     }
 }
 .moon-footer {

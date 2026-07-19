@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/chect out.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="meun-1"> <img src="./assets/image/header/Menu.svg" alt=""></div>
+                <div class="logo">
+                   <a href="#"><img src="./assets/image/header/logo.svg" alt=""> </a>
+                </div>
+                <div class="meun">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header">
+                    <ul>
+                        <li class="icon-hidden">
+                            <a href="#"><img src="./assets/image/header/Search.svg" alt=""></a>
+                        </li>
+                        <li class="icon-hidden" >
+                            <a href="#"><img src="./assets/image/header/Avatar.svg" alt=""></a>
+                        </li>
+                        <li class="icon-hidden">
+                            <a href="#"><img src="./assets/image/header/Heart.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/image/header/Shopping cart.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html" class="breadcrumb-link">Cart</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="shop.html" class="breadcrumb-link">Shipping </a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">Payment</span>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="checkout-container">
+                <div class="billing-section">
+            <div class="main-section-title">Billing Details</div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>First Name *</label>
+                    <input type="text" value="Samatha Clarken">
+                </div>
+                <div class="input-group">
+                    <label>Last Name *</label>
+                    <input type="text" value="Clarken">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Company</label>
+                    <input type="text" value="Moon">
+                </div>
+                <div class="input-group">
+                    <label>Country / Region *</label>
+                    <select class="real-select-field">
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="PS">Palestine</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group full-width">
+                <label>Street address *</label>
+                <input type="text" placeholder="Address">
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Town / City *</label>
+                    <input type="text" placeholder="City">
+                </div>
+                <div class="input-group">
+                    <label>State *</label>
+                    <select class="real-select-field">
+                        <option value="">Select State</option>
+                        <option value="NY">New York</option>
+                        <option value="CA">California</option>
+                        <option value="TX">Texas</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-group">
+                    <label>ZIP Code</label>
+                    <input type="text" placeholder="Zip code">
+                </div>
+                <div class="input-group">
+                    <label>Phone *</label>
+                    <input type="text" value="(123) 456 - 7890">
+                </div>
+            </div>
+            <div class="input-group full-width">
+                <label>Email</label>
+                <input type="email" value="example@youremail.com">
+            </div>
+            <div class="input-group full-width">
+                <label>Order notes</label>
+                <textarea placeholder="Type your message here..."></textarea>
+            </div>
+
+            <div class="navigation-row">
+                <div class="btn-return">&lt; RETURN TO CART</div>
+                <div class="btn-continue">CONTINUE TO SHIPPING -</div>
+            </div>
+        </div>
+        <div class="order-summary-section">
+            <div class="summary-table">
+                <div class="table-header">
+                    <div class="th-left">Product</div>
+                    <div class="th-right">Subtotal</div>
+                </div>
+                <div class="table-item">
+                    <div class="item-name">Porcelain Dinner Plate (27cm)</div>
+                    <div class="item-price">$59.00</div>
+                </div>
+                <div class="table-item">
+                    <div class="item-name">Ophelia Matte Natural Vase</div>
+                    <div class="item-price">$168.00</div>
+                </div>
+                <div class="table-item">
+                    <div class="item-name">Luana Bowl</div>
+                    <div class="item-price">$49.00</div>
+                </div>
+                <div class="table-item subtotal-row">
+                    <div class="item-name">Subtotal</div>
+                    <div class="item-price">$475.00</div>
+                </div>
+                <div class="table-item shipping-row">
+                    <div class="item-name">Shipping</div>
+                    <div class="item-price">$15.00</div>
+                </div>
+                <div class="table-header total-row">
+                    <div class="th-left">Total</div>
+                    <div class="th-right">$490.00</div>
+                </div>
+            </div>
+
+            <div class="payment-box">
+                <div class="payment-title">Payment</div>
+                <div class="payment-option">
+                    <input type="radio" name="payment" id="card" checked>
+                    <label for="card">Credit card</label>
+                    <div class="card-logos">
+                        <span class="card-logo visa"><img src="./assets/image/chect out/Frame (1).svg" alt=""></span>
+                        <span class="card-logo master"><img src="./assets/image/chect out/Frame.svg" alt=""></span>
+                    </div>
+                </div>
+                <input type="text" class="payment-input-1" placeholder="Card number">
+                <input type="text" class="payment-input-1" placeholder="Name on card">
+                <div class="input-row-small">
+                    <input type="text" class="payment-input" placeholder="Expiration date (MM/YY)">
+                    <input type="text" class="payment-input" placeholder="Security code">
+                </div>
+                <div class="payment-option-1 paypal-row">
+                    <input type="radio" name="payment" id="paypal">
+                    <label for="paypal"><img src="./assets/image/chect out/paypal.png" alt=""></label>
+                </div>
+                <button class="btn-place-order">PLACE ORDER</button>
+            </div>
+        </div>
+
+    </div>
+            </div>
+    </div>
+    <div class="moon-footer">
+        <div class="footer-container">
+            <div class=" brand-column">
+                <img src="./assets/image/header/logo2.svg" alt="">
+                <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma</p>
+                <button class="footer-btn">GET STARTED ➔</button>
+            </div>
+            <div class="footer-column">
+                <a href="./About.html"><h3 class="column-title">ABOUT US</h3></a>
+                <ul class="column-links">
+                    <li><a href="./About.html#1910">Mission</a></li>
+                    <li><a href="./About.html#Meet-Our-Team">Our team</a></li>
+                    <li><a href="./About.html#1990">Awards</a></li>
+                    <li><a href="./About.html#2010">Testimonials</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <a><h3 class="column-title">SERVICES</h3><a>
+                <ul class="column-links">
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Web development</a></li>
+                    <li><a href="#">Mobile design</a></li>
+                    <li><a href="#">UI/UX design</a></li>
+                    <li><a href="#">Branding design</a></li>
+                </ul>
+            </div>
+
+          <div class="footer-column">
+                <a><h3 class="column-title">PORTFOLIO</h3><a>
+                <ul class="column-links">
+                    <li><a href="#">Corporate websites</a></li>
+                    <li><a href="#">E-commerce</a></li>
+                    <li><a href="#">Mobile apps</a></li>
+                    <li><a href="#">Landing pages</a></li>
+                    <li><a href="#">UI/UX projects</a></li>
+                </ul>
+           </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-bottom1">Copyright © 2023 Moon | All Rights Reserved | Terms and Conditions | Privacy Policy</p>
+            <p class="footer-bottommd">Copyright © 2023 Moon <br>All Rights Reserved <br>Terms and Conditions | Privacy Policy</p>
+        </div>
+    </div>
+
+</body>
+</html>
